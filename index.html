@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sachin Verma</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="Sachin.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Rock+3D&family=Sacramento&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NavBar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
-  <div class="top-container">
-    <img class="top-cloud" src="images/cloud.png" alt="">
-    <h1>I'm Sachin.</h1>
-    <h2>a <span class="pro">pro</span>grammer.</h2>
-    <img class="bottom-cloud" src="images/cloud.png" alt="cloud image">
-    <img src="images/mountain.png" alt="mountain image">
-  </div>
-  <div class="middle-container">
-    <div class="profile">
-      <img src="sachin.png" alt="">
-      <h2>Hello.</h2>
-      <p class="intro">Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
-    </div>
-    <hr>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="code-img" src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?size=626&ext=jpg&ga=GA1.2.752038682.1647575791"alt="">
-        <h3>Web Designer</h3>
-        <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+<body style="height:1000px" class="mt-5">
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-center fixed-top">
+    <div class="container-fluid ">
+      <a href="#" class="navbar-brand">LOGO</a>
+      <button type="button" name="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapseid"><sp class="navbar-toggler-icon"></sp></button>
+      <div class="navbar-collapse collapse" id="collapseid">
+
+        <ul class=" navbar-nav nav  me-auto" role="tablist">
+          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link disabled" data-bs-toggle="tab" href="#">Contact</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li> <a class="dropdown-item" data-bs-toggle="tab" href="#link">Link1</a></li>
+              <li> <a class="dropdown-item" href="#">Link2</a></li>
+              <li> <a class="dropdown-item" href="#">Link3</a></li>
+            </ul>
+        </li>
+        </ul>
+        <!-- <form class="d-flex" action="index.html" method="post">
+          <input type="text" class="me-2 form-control">
+          <button type="button" name="button" class="btn btn-primary">Search</button>
+        </form> -->
+        <form class="d-flex" action="index.html" method="post">
+          <input type="text" name=" " value="" class="form-control me-2" placeholder="Search">
+          <button type="button" name="button" class="btn btn-primary">Search</button>
+        </form>
+
       </div>
-      <div class="skill-row">
-        <img class="graphic-img" src="https://img.freepik.com/free-vector/pen-tool-concept-illustration_114360-468.jpg?t=st=1648727204~exp=1648727804~hmac=e114adabb57c4be9d94956c8e88b740cf9fc69659b05e9393836e0692821197e&w=740"  alt="">
-        <h3>Graphic Designer</h3>
-        <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-      </div>
     </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-      <p class="contact-message">Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-      <a class="btn" href="mailto:sachinkv9810@gmail.com">CONTACT ME</a>
+
+  </nav>
+
+  <div class="tab-content ">
+    <div class="container-fluid tab-pane active" id="home"><br>
+      <h1>HOME</h1>
+      <p>Hello World! <br> Myself Sachin Kumar Verma & I am just testing my test pane skills. <br>Thank You</p>
+    </div>
+
+    <div class="container-fluid tab-pane fade" id="about"><br>
+      <h1>ABOUT</h1>
+      <p>Hello World! <br> Myself Sachin Kumar Verma & I am just testing my test pane skills. <br>Thank You</p>
+    </div>
+
+    <div class="container-fluid tab-pane fade" id="link"><br>
+      <h1>DROPDOWN</h1>
+      <p>Hello World! <br> Myself Sachin Kumar Verma & I am just testing my test pane skills. <br>Thank You</p>
     </div>
   </div>
 
 
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/sachinkv9810">LinkedIn</a>
-    <a class="footer-link" href="https://twitter.com/">Twitter</a>
-    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-    <p class="copyright">© 2018 Sachin Verma @Sachinkv9810</p>
-  </div>
-
-
-  </div>
 </body>
+
 </html>
